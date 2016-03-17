@@ -1,5 +1,5 @@
 import express from "express"
 
-export default function newRouter() {
-    return express.Router()
+module.exports = {
+    newRouter : function() { return express.Router() }
 }
