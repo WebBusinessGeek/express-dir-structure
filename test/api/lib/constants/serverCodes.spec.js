@@ -11,4 +11,18 @@ describe("serverCodes", () => {
             assert.equal(actual, expected, "success code should equal 200")
         })
     })
+    describe("FAILURE_CODE", () => {
+        it("should return 400", () => {
+            let expected = 400
+            let actual = serverCodes.FAILURE_CODE
+            assert.equal(actual, expected, "failure code should equal 400")
+        })
+    })
+    describe("ERROR_CODE", () => {
+        it("should return 500", () => {
+            let expected = 500
+            let actual = serverCodes.ERROR_CODE
+            assert.equal(actual, expected, "error code should equal 500")
+        })
+    })
 })
