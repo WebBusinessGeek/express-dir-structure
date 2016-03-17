@@ -1,5 +1,5 @@
 import multer from "multer"
 
-export default function newRouteParser() {
-    return multer()
+module.exports = {
+    newParser : () => { return multer() }
 }
